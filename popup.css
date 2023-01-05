@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Gotham";
+    src: 
+        url("resources/gothambook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	width: 280px;
+	height: auto;
+	-wekbit-font-smoothing: antialiased;
+}
+
+body {
+	background: rgb(35, 37, 39);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "Gotham", sans-serif;
+}
+
+.header-container {
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: .8em;
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.header-container > * {
+	margin-top: 5px;
+	margin-bottom: 0;
+	user-select: none;
+}
+
+.root-container {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.current-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+}
+
+.id-container {
+	padding: 0px 0px 15px 5px;
+}
+
+.tutorial-container {
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.tutorial-text {
+	text-align: center;
+	font-size: 1.3em;
+	top: 0px;
+	padding: 10px 10px 10px 10px;
+	margin: 5px 5px 20px 5px;
+}
+
+input {
+	width: 60%;
+	height: auto;
+	padding: 10px 10px 8px 10px;
+	font-size: 1.25em;
+	background: rgb(21, 22, 24);
+	border-width: 0px 0px 1px 0px;
+	border-color: rgb(100, 100, 100);
+	color: rgb(244, 244, 244);
+	border-radius: 4px;
+	font-family: "Gotham", sans-serif;
+	-webkit-transition: border-color 100ms linear;
+    -ms-transition: border-color 100ms linear;
+    transition: border-color 100ms linear;
+}
+input:focus {
+	outline: none;
+	border-color: rgb(80, 228, 104);
+	-webkit-transition: border-color 100ms linear;
+    -ms-transition: border-color 100ms linear;
+    transition: border-color 100ms linear;
+}
+
+button {
+	font-family: "Gotham", sans-serif;
+	cursor: pointer;
+}
+
+.show-page {
+	font-size: 1em;
+	color: none;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.stat-title {
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+.stat-value {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.square-button {
+	background-color: rgb(80, 228, 104);
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	-webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+.square-button:hover {
+	background-color: rgb(62, 180, 82);
+	-webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+.square-button:active {
+	background-color: rgb(52, 155, 70);
+	-webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.set-placeid {
+	width: 25%;
+	font-size: 1em;
+	color: none;
+}
+
+.close {
+	background: none;
+	border: none;
+	color: rgb(185, 182, 182);
+	position: absolute;
+	right: 0;
+	font-size: 1.5em;
+}
+.close:hover {
+	color: rgb(255, 255, 255);
+}
+
+.need-help {
+	background: none;
+	color: rgb(216, 210, 210);
+	border: none;
+	padding: 5px 0 0 2px;
+	font-size: 1.25em;
+}
+.need-help:hover {
+	text-decoration: underline;
+}
+
+.hidden {
+	/* visibility: hidden; */
+	display: none;
+}
+
+.no-current {
+	background: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(216, 210, 210);
+	border: none;
+	padding: 20px;
+	text-align: center;
+	font-family: "Gotham", sans-serif;
+	font-size: 1.25em;
+	font-weight: 100;
+	-webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+.no-current:hover {
+	background-color: rgba(0, 0, 0, .2);
+	-webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.tutorial-nav {
+	border: none;
+	border-radius: 4px;
+	width: 30px;
+	height: 20px;
+	font-weight: bolder;
+	position: absolute;
+	bottom: 0px
+}
+
+hr {
+	border: none;
+	flex-shrink: 0;
+	height: 1px;
+	background-color: rgb(86, 88, 90);
+	color: rgb(86, 88, 90);
+	margin: 16px 0;
+}
+
+p {
+	margin: 0;
+}

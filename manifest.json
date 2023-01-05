@@ -1,0 +1,33 @@
+{
+	"name": "RobuxCashback",
+	"version": "0.0.1",
+	"description": "Save up to 40% of your Robux when purchasing Roblox items off the Roblox website.",
+	"manifest_version": 3,
+	"action": {
+		"default_title": "Robux Cashback",
+		"default_popup": "popup.html",
+		"default_icon": {
+		  "128": "resources/icon.png"
+		}
+	  },
+	"background": {
+		"service_worker": "background.js"
+	},
+	"declarative_net_request": {
+		"rule_resources": [
+		  {
+			"id": "1",
+			"enabled": true,
+			"path": "ruleset.json"
+		  }
+		]
+	  },
+    "host_permissions": [
+        "*://*.roblox.com/*"
+    ],
+	"permissions": [
+		"storage",
+		"webRequest",
+		"declarativeNetRequestWithHostAccess"
+	]
+}

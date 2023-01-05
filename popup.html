@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robux Cashback</title>
+    <link rel="stylesheet" href="/popup.css" />
+	<meta charset="UTF-8">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<div class="header-container">
+		<h1>Robux <span style="color: rgb(80, 228, 104)">Cashback</span></h1>
+	</div>
+	<div class="root-container">
+    <button class="no-current" id="no-current">You haven't set a Place ID yet. If you don't know how to get started, <b>click here</b>.</button>
+    <div class="tutorial-container hidden" id="tutorial-container">
+      <button class="close" id="tutorial-close">X</button>
+      <button class="tutorial-nav hidden" id="tutorial-previous" style="left:0px;"><</button>
+      <button class="tutorial-nav hidden" id="tutorial-next" style="right:0px;">></button>
+      <p class="tutorial-text" id="tutorial-text">Tutorial placeholder</p>
+    </div>
+    <div class="current-container hidden" id="current-container">
+      <p class="stat-title">Current Place<br><span class="stat-value" id="stat-value">000000000</span></p>
+      <button class="show-page square-button" id="show-page"><b>OPEN PAGE</b></button>
+    </div>
+    <hr>
+    <div class="id-container" id="id-container">
+      <input id="place-id-input" placeholder="Place ID" class="center">
+      <button class="set-placeid square-button" id="set-placeid"><b>SET</b></button>
+      <button class="need-help" id="start-tutorial">Need help?</button>
+    </div>
+	</div>
+  </body>
+</html>
